@@ -1,0 +1,33 @@
+
+
+<h1>THIS IS THE RESULTS PAGE</h1>
+
+<ul >
+    <% data["Search"].forEach(function(movie){ %>
+        <li>   
+            <li></li><img src="<%= movie["Poster"]; %>"> </li>
+            <li><h1><%= movie['Title'] %></h1></li>
+            <li><h3><%= movie['Year'] %></h3></li>
+          
+        </li>
+    <% }) %>
+    
+</ul>
+
+<form>
+   <button formaction="/results" >load more</button>
+</form>
+
+
+
+        
+
+
+
+<!-- Adding search again button without bootstrap -->
+<form>
+  <button formaction="/">!!!Search Againnn!!!</button>
+</form>
+
+
+
